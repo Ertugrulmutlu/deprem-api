@@ -17,15 +17,6 @@ tema =  {
 "Mw"             : "NULL",
 "Yer"            : "NULL"
 }
-@app.route('/info', methods = ['Get','Post'])
-def info():
-    if request.method == 'GET':
-        data = """Bu Boğaz içi rasathanesinin veri bankasından çekilmiş verilerden oluşmuş bir Api'dır lütfen ticari amaçla kullanmayınız
-                  Kullanım rehberi:
-                    1-> Tüm depremler için(500)  =/tum
-                    2-> En son olan deprem için = /son
-                    """
-        return data
 @app.route('/tum',methods = ['Get'])
 def tum():
     deprem_dict = {}
