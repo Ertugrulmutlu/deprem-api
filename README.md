@@ -65,7 +65,7 @@ The bottom data on the observatory page is "last" for the api.
     7->Seçtiğiniz tarihteki x kadar depremleri gösterme = /tum/YYYY.MM.DD/x <br>
     8->Seçtiğiniz tarihler arasındaki depremleri gösterme = /tum/YYYY.MM.DD-YYYY.MM.DD <br>
     9->Seçtiğiniz tarihler arasındaki x kadar depremi gösterme = /tum/YYYY.MM.DD-YYYY.MM.DD-x<br>
-    Önemli : Dönüşler Json(dict) şeklindedir. Nasıl kullanıldığı "nasıl/how" klasöründe dillere göre gösterilmiştir.
+    Önemli : Dönüşler Json(dict) şeklindedir.
     <br>
     <br>
     </div>
@@ -80,7 +80,7 @@ The bottom data on the observatory page is "last" for the api.
     7->Displaying x earthquakes on the date of your choice = /tum/YYYYY.MM.DD/x<br>
     8->Displaying earthquakes between your selected dates = /tum/YYYYYY.MM.DD-YYYYYY.MM.DD<br>
     9->Displaying x number of earthquakes between selected dates = /tum/YYYYYY.MM.DD-YYYYYY.MM.DD-x <br>
-    Important : Important : Returns are in Json(dict). How to use it is shown by programming languages in the "Nasıl/how" folder.
+    Important : Important : Returns are in Json(dict).
     </div>
 </div>
 <br><br>
