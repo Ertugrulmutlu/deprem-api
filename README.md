@@ -1,4 +1,5 @@
 <div style ="font-family:Courier New, monospace">
+
 <ins><h1 align="center">KANDİLLİ RASATHANE API</h1></ins>
  <div style = "font-size: 100%">
  {Tr}Kandilli Rasathanesinin yayınladığı son 500 deprem hakkında dilediğiniz depremi sorgulayabilir, canlı olarak uygulamalarınızda gösterebilirsiniz.
@@ -8,8 +9,14 @@
  {Eng}You can query any earthquake you want about the last 500 earthquakes published by the Kandilli Observatory and show them live in your applications.
 </div>
 <br><br>
+
+<ins><h1 align="center">EndPoints</h1></ins>
+<div align="center", style="font-size:150%">
+    Url = https://deprem-api-delta.vercel.app/
+</div>
+<br><br><br>
 <ins><h1 align="center">{Tr}Neler yapabilir ?<br>//<br>{Eng}What it can do ?</h1></ins>
-    <div style="text-align:center;font-size:150%">{Tr}</div>
+    <div align="center", style="font-size:150%">{Tr}</div>
     <div align="center", style="font-size:100%">
 1->Son 500 depremi görebilir. <br>
 2->Dilediğiniz ilk x kadar depremi gösterebilir. <br>
