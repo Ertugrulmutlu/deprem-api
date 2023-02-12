@@ -2,10 +2,10 @@
 # Using flask to make an api
 # import necessary libraries and functions
 from datetime import datetime
-from flask import Flask, request
+from flask import Flask, request,render_template
 from data_scrap import Script_design 
 # creating a Flask app
-app = Flask(__name__)
+app = Flask(__name__,template_folder='views')
 tema =  {
 "Tarih"          : "NULL",
 "Saat"           : "NULL",
@@ -17,6 +17,9 @@ tema =  {
 "Mw"             : "NULL",
 "Yer"            : "NULL"
 }
+@app.route('/')
+def main():
+    return render_template('index.html')
 @app.route('/tum',methods = ['Get'])
 def tum():
     deprem_dict = {}
