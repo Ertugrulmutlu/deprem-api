@@ -20,13 +20,11 @@ tema =  {
 @app.route('/', methods= ['GET','POST'])
 def main():
     if request.method == 'POST':
-        print(request.form.get('Türkce'))
         if request.form.get('Türkce') == "vTürkce":
             return render_template('index.html')
         elif request.form.get('English') == "vEnglish":
             return render_template('index_ing.html')
-        else:
-            return render_template('index.html')
+    return render_template('index.html')
 @app.route('/tum',methods = ['Get'])
 def tum():
     deprem_dict = {}
