@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html lang="en">
   <head>
@@ -183,4 +184,191 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </div>
   </body>
+=======
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Khojki:wght@600&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Deprem-Api</title>
+  </head>
+  <body>
+    
+    <div
+  class="bg-image"
+  style="
+    background-image: url('static/image/bg.jpg');
+    height: 350vh;
+  ">
+    <nav class="navbar navbar-expand " id="nav_spec">
+      <div id="brand_spec" >Deprem-Api</div>
+      <div class="collapse navbar-collapse justify d-flex justify-content-end" id="navbarNav">
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <form method="post" action="/">
+            <button type="submit" name="English" class="btn btn-secondary active" value="vEnglish">English</button>
+            <button type="submit" name="Türkce" class="btn btn-secondary " value="vTürkce">Türkçe</button>
+          </form>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse justify d-flex justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active mr-5">
+            <a href="https://github.com/Ertugrulmutlu/deprem-api" target="blank">
+              <img src="static/image/github.svg" width="100" height="100" class="d-inline-block align-top "  alt="">
+            </a>
+          </li>
+          <li class="nav-item active ">
+            <a href="https://www.linkedin.com/in/ertuğrul-mutlu/" target="blank">
+              <img src="static/image/linkedin.svg" width="100" height="100" class="d-inline-block align-top "  alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid" id=""style="margin-top:3%">
+      <div class="row">
+        <div class="col-2">
+        </div>
+        <div class="col-8">
+          <div class="jumbotron" id="jumbotron_spec">
+            <h1 class="display-5">Information !</h1>
+            <hr class="my-4">
+            <p class="lead">This site is the main site of Deprem-Api. You can learn how to use it through the cards at the bottom.</p>
+            <hr class="my-4">
+            <p>Data are taken from Kandilli observatory : <a href="http://www.koeri.boun.edu.tr/scripts/lst9.asp"> for Kandilli observatory </a></p>
+            <p>For commercial use, please contact Kandilli Observatory and Boğaziçi University.</p>
+          </div>
+        </div>
+        <div class="col-2"></div>
+      </div>
+    </div>
+    <div class="container-fluid " id=""style="margin-top:3%">
+      <div class="row">
+        <div class="col-2">
+        </div>
+        <div class="col-4">
+          <div class="jumbotron jumbotron-fluid" id="jumbotron_spec">
+            <div class="container">
+              <h1 class="display-3">Usage</h1>
+              <p class="lead">You can learn the commands you can use by clicking the button.</p>
+              <button type="button" class="btn btn-lg" id="button_spec" data-toggle="modal" data-target="#myModal">Commands</button>
+              <!-- Modal -->
+              <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header justify d-flex justify-content-center">
+                      <h4 class="modal-title">Commands</h4>
+                    </div>
+                    <div class="modal-body justify d-flex justify-content-center">
+                      <p>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Displaying 500 earthquakes = /tum</li>
+                          <li class="list-group-item">Displaying first x earthquakes = /ilk/x</li>
+                          <li class="list-group-item">Displaying last x earthquakes = /son/x</li>
+                          <li class="list-group-item">Displaying the last earthquake = /son</li>
+                          <li class="list-group-item">Displaying the first earthquake = /ilk</li>
+                          <li class="list-group-item">Displaying earthquakes on the date you select = /tum/YYYY.MM.DD</li>
+                          <li class="list-group-item">Display to x number of earthquakes on the date of your choice = /tum/YYYY.MM.DD/x</li>
+                          <li class="list-group-item">Display earthquakes between the dates you select = /tum/YYYY.MM.DD-YYYY.MM.DD</li>
+                          <li class="list-group-item">Display x number of earthquakes between the dates you select = /tum/YYYY.MM.DD-YYYY.MM.DD-x</li>
+                          <li class="list-group-item">NOTE : Returns are Json(dict).</li>
+                        </ul>
+                      </p>
+                    </div>
+                    <div class="modal-footer justify d-flex justify-content-center">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Go back</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="jumbotron jumbotron-fluid" id="jumbotron_spec">
+            <div class="container">
+              <h1 class="display-3">Properties</h1>
+              <p class="lead">You can find out what you can do with Api by clicking the button.</p>
+              <button type="button" id="button_spec"  class="btn btn-lg" data-toggle="modal" data-target="#myModala">Properties</button>
+              <!-- Modal -->
+              <div class="modal fade" id="myModala" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header justify d-flex justify-content-center">
+                      <h4 class="modal-title">Properties</h4>
+                    </div>
+                    <div class="modal-body justify d-flex justify-content-center">
+                      <p>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">You can display 500 earthquakes.</li>
+                          <li class="list-group-item">You can display first x earthquakes.</li>
+                          <li class="list-group-item">You can display last x earthquakes.</li>
+                          <li class="list-group-item">You can display the last earthquake.</li>
+                          <li class="list-group-item">You can display the first earthquake</li>
+                          <li class="list-group-item">You can display earthquakes on the date you select</li>
+                          <li class="list-group-item">You can display to x number of earthquakes on the date of your choice.</li>
+                          <li class="list-group-item">You can display earthquakes between the dates you select</li>
+                          <li class="list-group-item">You can display x number of earthquakes between the dates you select</li>
+                          <li class="list-group-item">NOTE: The top data on the Observatory page is "first" for the api and the bottom data on the Observatory page is "last" for the api.</li>
+                        </ul>
+                      </p>
+                    </div>
+                    <div class="modal-footer justify d-flex justify-content-center">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Go Back</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2"></div>
+      </div>
+    </div>
+    <div class="container-fluid" id=""style="margin-top:3%">
+      <div class="row">
+        <div class="col-2">
+        </div>
+        <div class="col-8">
+          <div class="jumbotron" id="jumbotron_spec">
+            <h1 class="display-5">Hey mate!</h1>
+            <hr class="my-4">
+            <p class="lead">I am waiting for your suggestions for the development of the site and Api, and if there is anything you can do voluntarily, please do not hesitate to write to me.</p>
+            <hr class="my-4">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-4 mt-5">
+                  <img src="static/image/mail.svg" width="30" height="30" class="d-inline-block align-top" style="margin-left: 90px;"  alt="">
+                  <p>ertugrulmutlu004@gmail.com</p>
+                </div>
+                <div class="col-4 mt-5">
+                  <p>The site is entirely prepared by Ertugrul Mutlu.</p>
+                </div>
+                <div class="col-4 mt-5">
+                  You can find usage examples and source codes on github. <br> Get well soon again, Turkey!!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2"></div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </div>
+  </body>
+>>>>>>> 3f6c767be493191abd72ac0544998c443e8a756c
 </html>
