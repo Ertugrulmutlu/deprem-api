@@ -31,7 +31,6 @@
         </div>
       </div>
       <div class="collapse navbar-collapse justify d-flex justify-content-end" id="navbarNav">
-        
         <ul class="navbar-nav">
           <li class="nav-item active mr-5">
             <a href="https://github.com/Ertugrulmutlu/deprem-api" target="blank">
@@ -52,12 +51,12 @@
         </div>
         <div class="col-8">
           <div class="jumbotron" id="jumbotron_spec">
-            <h1 class="display-5">Bilgilendirme !</h1>
+            <h1 class="display-5">Information !</h1>
             <hr class="my-4">
-            <p class="lead">Bu sitede Deprem-Api'nin ana sitesidir. Altta bulunan kartlar aracılığıyla nasıl kullanılıcağını öğrenebilirsiniz.</p>
+            <p class="lead">This site is the main site of Deprem-Api. You can learn how to use it through the cards at the bottom.</p>
             <hr class="my-4">
-            <p>Veriler Kandilli rasathanesinden alınmaktadır : <a href="http://www.koeri.boun.edu.tr/scripts/lst9.asp">Kandilli rasathanesi için</a></p>
-            <p>Ticari kullanım için lütfen kandilli rasathanesi ve Boğaziçi üniversitesi ile görüşünüz.</p>
+            <p>Data are taken from Kandilli observatory : <a href="http://www.koeri.boun.edu.tr/scripts/lst9.asp"> for Kandilli observatory </a></p>
+            <p>For commercial use, please contact Kandilli Observatory and Boğaziçi University.</p>
           </div>
         </div>
         <div class="col-2"></div>
@@ -70,35 +69,35 @@
         <div class="col-4">
           <div class="jumbotron jumbotron-fluid" id="jumbotron_spec">
             <div class="container">
-              <h1 class="display-3">Kullanım</h1>
-              <p class="lead">Butona tıklayarak kullanabileceğiniz komutları öğrenebilirsiniz.</p>
-              <button type="button" class="btn btn-lg" id="button_spec" data-toggle="modal" data-target="#myModal">Komutlar</button>
+              <h1 class="display-3">Usage</h1>
+              <p class="lead">You can learn the commands you can use by clicking the button.</p>
+              <button type="button" class="btn btn-lg" id="button_spec" data-toggle="modal" data-target="#myModal">Commands</button>
               <!-- Modal -->
               <div class="modal fade" id="myModal" role="dialog">
                 <div class="modal-dialog">
                   <!-- Modal content-->
                   <div class="modal-content">
                     <div class="modal-header justify d-flex justify-content-center">
-                      <h4 class="modal-title">Komutlar</h4>
+                      <h4 class="modal-title">Commands</h4>
                     </div>
                     <div class="modal-body justify d-flex justify-content-center">
                       <p>
                         <ul class="list-group list-group-flush">
-                          <li class="list-group-item">500 Depreme bakma = /tum</li>
-                          <li class="list-group-item">İlk x depremi gösterme = /ilk/x</li>
-                          <li class="list-group-item">Son x depremi gösterme = /son/x</li>
-                          <li class="list-group-item">Son depremi gösterme = /son</li>
-                          <li class="list-group-item">İlk depremi gösterme = /ilk</li>
-                          <li class="list-group-item">Seçtiğiniz tarihteki depremleri gösterme = /tum/YYYY.MM.DD</li>
-                          <li class="list-group-item">Seçtiğiniz tarihteki x kadar depremleri gösterme = /tum/YYYY.MM.DD/x</li>
-                          <li class="list-group-item">Seçtiğiniz tarihler arasındaki depremleri gösterme = /tum/YYYY.MM.DD-YYYY.MM.DD</li>
-                          <li class="list-group-item">Seçtiğiniz tarihler arasındaki x kadar depremi gösterme = /tum/YYYY.MM.DD-YYYY.MM.DD-x</li>
-                          <li class="list-group-item">NOT : Dönüşler Json(dict) şeklindedir.</li>
+                          <li class="list-group-item">Displaying 500 earthquakes = /tum</li>
+                          <li class="list-group-item">Displaying first x earthquakes = /ilk/x</li>
+                          <li class="list-group-item">Displaying last x earthquakes = /son/x</li>
+                          <li class="list-group-item">Displaying the last earthquake = /son</li>
+                          <li class="list-group-item">Displaying the first earthquake = /ilk</li>
+                          <li class="list-group-item">Displaying earthquakes on the date you select = /tum/YYYY.MM.DD</li>
+                          <li class="list-group-item">Display to x number of earthquakes on the date of your choice = /tum/YYYY.MM.DD/x</li>
+                          <li class="list-group-item">Display earthquakes between the dates you select = /tum/YYYY.MM.DD-YYYY.MM.DD</li>
+                          <li class="list-group-item">Display x number of earthquakes between the dates you select = /tum/YYYY.MM.DD-YYYY.MM.DD-x</li>
+                          <li class="list-group-item">NOTE : Returns are Json(dict).</li>
                         </ul>
                       </p>
                     </div>
                     <div class="modal-footer justify d-flex justify-content-center">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Geri git</button>
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Go back</button>
                     </div>
                   </div>
                 </div>
@@ -109,35 +108,35 @@
         <div class="col-4">
           <div class="jumbotron jumbotron-fluid" id="jumbotron_spec">
             <div class="container">
-              <h1 class="display-3">Özellikleri</h1>
-              <p class="lead">Butona tıklayarak Api ile neler yapabileceğinizi öğrenebilirsiniz.</p>
-              <button type="button" id="button_spec"  class="btn btn-lg" data-toggle="modal" data-target="#myModala">Özellikleri</button>
+              <h1 class="display-3">Properties</h1>
+              <p class="lead">You can find out what you can do with Api by clicking the button.</p>
+              <button type="button" id="button_spec"  class="btn btn-lg" data-toggle="modal" data-target="#myModala">Properties</button>
               <!-- Modal -->
               <div class="modal fade" id="myModala" role="dialog">
                 <div class="modal-dialog">
                   <!-- Modal content-->
                   <div class="modal-content">
                     <div class="modal-header justify d-flex justify-content-center">
-                      <h4 class="modal-title">Özellikleri</h4>
+                      <h4 class="modal-title">Properties</h4>
                     </div>
                     <div class="modal-body justify d-flex justify-content-center">
                       <p>
                         <ul class="list-group list-group-flush">
-                          <li class="list-group-item">Son 500 depremi görebilir.</li>
-                          <li class="list-group-item">Dilediğiniz ilk x kadar depremi gösterebilir.</li>
-                          <li class="list-group-item">Dilediğiniz son x kadar depremi gösterebilir.</li>
-                          <li class="list-group-item">Son depremi gösterebilir.</li>
-                          <li class="list-group-item">İlk depremi gösterebilir.</li>
-                          <li class="list-group-item">Seçtiğiniz tarihteki depremleri gösterebilir.</li>
-                          <li class="list-group-item">Seçtiğiniz tarihte olan x kadar depremi gösterebilir.</li>
-                          <li class="list-group-item">Seçtiğiniz tarihler arasındaki depremleri gösterebilir.</li>
-                          <li class="list-group-item">Seçtiğiniz tarihler arasındaki x kadar depremi gösterebilir.</li>
-                          <li class="list-group-item">NOT: Rasathane sayfasındaki en üstteki veri api için "ilk", Rasathane sayfasındaki en alttaki veri api için "son"dur.</li>
+                          <li class="list-group-item">You can display 500 earthquakes.</li>
+                          <li class="list-group-item">You can display first x earthquakes.</li>
+                          <li class="list-group-item">You can display last x earthquakes.</li>
+                          <li class="list-group-item">You can display the last earthquake.</li>
+                          <li class="list-group-item">You can display the first earthquake</li>
+                          <li class="list-group-item">You can display earthquakes on the date you select</li>
+                          <li class="list-group-item">You can display to x number of earthquakes on the date of your choice.</li>
+                          <li class="list-group-item">You can display earthquakes between the dates you select</li>
+                          <li class="list-group-item">You can display x number of earthquakes between the dates you select</li>
+                          <li class="list-group-item">NOTE: The top data on the Observatory page is "first" for the api and the bottom data on the Observatory page is "last" for the api.</li>
                         </ul>
                       </p>
                     </div>
                     <div class="modal-footer justify d-flex justify-content-center">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Geri git</button>
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Go Back</button>
                     </div>
                   </div>
                 </div>
@@ -154,9 +153,9 @@
         </div>
         <div class="col-8">
           <div class="jumbotron" id="jumbotron_spec">
-            <h1 class="display-5">Selam Dostum !</h1>
+            <h1 class="display-5">Hey mate!</h1>
             <hr class="my-4">
-            <p class="lead">Sitenin ve Api'ın gelişmesi için önerilerini bekliyorum yapabileceğin gönüllülük esası bir şey olursa da lütfen bana yazmaktan çekinme.</p>
+            <p class="lead">I am waiting for your suggestions for the development of the site and Api, and if there is anything you can do voluntarily, please do not hesitate to write to me.</p>
             <hr class="my-4">
             <div class="container-fluid">
               <div class="row">
@@ -165,10 +164,10 @@
                   <p>ertugrulmutlu004@gmail.com</p>
                 </div>
                 <div class="col-4 mt-5">
-                  <p>Site tamamen Ertuğrul Mutlu tarafından hazırlanmıştır.</p>
+                  <p>The site is entirely prepared by Ertugrul Mutlu.</p>
                 </div>
                 <div class="col-4 mt-5">
-                  Kullanım örnekleri ve kaynak kodlarına github üzerinden ulaşabilirsiniz. <br> Tekrardan geçmiş olsun Türkiye!!
+                  You can find usage examples and source codes on github. <br> Get well soon again, Turkey!!
                 </div>
               </div>
             </div>
